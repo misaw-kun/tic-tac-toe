@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+:root {
+  --ryb-blue: #0951FD;
+  --dark-imp-blue: #001D80;
+  --fuchsia: #FF01FD;
+  --lemon: #F9FE0E;
+  --sea-green: #00FBD6;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--ryb-blue);
+}
+
+.header {
+  text-align: center;
+  margin: 5rem;
+}
+
+#message {
+  margin: 2rem;
+  font-family: 'Press Start 2P', cursive;
+  color: var(--sea-green);
+}
+
+#title {
+  color: var(--fuchsia);
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2.5rem;
+  text-shadow: -1px 0 var(--lemon), 0 1px var(--lemon), 1px 0 var(--lemon), 0 -1px var(--lemon), 4px 4px var(--sea-green); 
+}
+
+#container {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--ryb-blue);
+}
+
+.gameboard {
+  display: grid;
+  background-color: var(--fuchsia);
+  border: 10px solid var(--fuchsia);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+  width: 600px;
+  height: 600px;
+  box-shadow: 10px 10px var(--dark-imp-blue);
+}
+
+.square {
+  background-color: var(--lemon);
+  user-select: none;
+  cursor: pointer;
+  font-family: 'Press Start 2P', cursive;
+  color: var(--fuchsia);
+  font-size: 7.5rem;
+  text-align: center;
+}
+
+.square:hover {
+  background-color: var(--sea-green);
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+}
+
+.choose {
+  color: var(--fuchsia);
+  font-size: 1.5rem;
+  font-family: 'Press Start 2P', cursive;
+  margin: 1.5rem 1.5rem;
+}
+
+.sign {
+  cursor: pointer; 
+  display: inline-block;
+  font-family: 'Press Start 2P', cursive;
+  padding: 10px 20px;
+  margin-top: 1.5rem;
+  border: 3px solid var(--lemon);
+  background-color: var(--fuchsia);
+  color: var(--lemon);
+  font-size: 2.5rem;
+  box-shadow: 0 9px var(--sea-green);
+}
+
+.diff {
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  width: 80%;
+  margin-left: 2.5rem;
+}
+
+.diff:active {
+  color: var(--lemon);
+  background-color: rgba(255, 1, 253, 0.7);
+  box-shadow: 0 5px rgba(0, 251, 214, 0.4);
+  transform: translateY(4px);
+}
+
+.active {
+  color: var(--lemon);
+  background-color: rgba(255, 1, 253, 0.7);
+  box-shadow: 0 5px rgba(0, 251, 214, 0.4);
+  transform: translateY(4px);
+}
+
+.sign:hover {
+  background-color: rgba(255, 1, 253, 0.7);
+}
+
+.restart {
+  background-color: var(--lemon);
+  color: var(--fuchsia);
+  border: 3px solid var(--fuchsia);
+}
+
+.restart:hover {
+  background-color: rgba(249, 254, 14, 0.7);
+}
+
+.restart:active {
+  background-color: rgba(249, 254, 14, 0.7);
+  box-shadow: 0 5px rgba(0, 251, 214, 0.4);
+  transform: translateY(4px);
+}
+
+/* FOOTER */
+
+.footer {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 1.4em;
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  color: var(--sea-green);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--lemon);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--dark-imp-blue);
+}

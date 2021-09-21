@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>❌ ticTacToe</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1 id="title">tic-tac-toe</h1>
+        <h2 id="message"></h2>
+    </header>
+    <main id="container">
+            <div class="controls left">
+                <h3 class="choose">Choose a sign</h3>
+                <button class="sign x">X</button>
+                <button class="sign o">O</button>
+                <button class="sign restart">restart</button>
+            </div>
+            <div class="gameboard">
+                <div class="square" data-row="0" data-column="0"></div>
+                <div class="square" data-row="0" data-column="1"></div>
+                <div class="square" data-row="0" data-column="2"></div>
+                <div class="square" data-row="1" data-column="0"></div>
+                <div class="square" data-row="1" data-column="1"></div>
+                <div class="square" data-row="1" data-column="2"></div>
+                <div class="square" data-row="2" data-column="0"></div>
+                <div class="square" data-row="2" data-column="1"></div>
+                <div class="square" data-row="2" data-column="2"></div>
+            </div>
+            <div class="controls">
+            <h3 class="choose">difficulty: <span id="level">easy</span></h3>
+                <button class="sign diff easy">easy</button>
+                <button class="sign diff med">medium</button>
+                <button class="sign diff hard">hard</button>
+                <button class="sign diff ai">over9k</button>
+            </div>
+    </main>
+    <footer class="footer">
+        <p>Made with ❤️ by <a href="https://github.com/misaw-kun">redpanda</a></p>
+    </footer>
+</body>
+</html>
